@@ -5,7 +5,7 @@ root.title("Draggable Sticky Note")
 root.geometry("600x400")
 
 note = tk.Frame(root, bg = "khaki", bd =1, relief="solid")
-note.place(x=50, y=50, width=100, height=100)
+note.place(x=50, y=50, width=200, height=200)
 
 title = tk.Label(note,
                  text = "note 1",
