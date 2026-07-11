@@ -52,29 +52,29 @@ def create_note(colour):
 def colour_picker():
     colour_options = tk.Toplevel(root)
     colour_options.geometry("200x200")
-    colour_options.configure(bg="Skyblue")
+    colour_options.configure(bg="coral")
     colour_options.title("Colour Picker")
 
     label = tk.Label(colour_options, text="Choose a colour", bg= "skyblue", font=("Times New Roman", 10))
     label.pack()
 
-    red_button = tk.Button(colour_options, bg="red", width=2, height=1, command=lambda: create_note("red"))
+    red_button = tk.Button(colour_options, bg="red", width=2, height=1, command=lambda: [create_note("red"), colour_options.destroy()])
     red_button.pack()
     red_button.place(x=10, y=50)
 
-    blue_button = tk.Button(colour_options, bg="blue", width=2, height=1, command=lambda: create_note("blue"))
+    blue_button = tk.Button(colour_options, bg="skyblue", width=2, height=1, command=lambda: [create_note("skyblue"), colour_options.destroy()])
     blue_button.pack()
     blue_button.place(x=50, y=50)
 
-    yellow_button = tk.Button(colour_options, bg="yellow", width=2, height=1, command= lambda: create_note("yellow"))
+    yellow_button = tk.Button(colour_options, bg="yellow", width=2, height=1, command= lambda: [create_note("yellow"), colour_options.destroy()])
     yellow_button.pack()
     yellow_button.place(x=90, y=50)
 
-    green_button = tk.Button(colour_options, bg="lightgreen", width=2, height=1, command= lambda: create_note("lightgreen"))
+    green_button = tk.Button(colour_options, bg="lightgreen", width=2, height=1, command= lambda: [create_note("lightgreen"), colour_options.destroy()])
     green_button.pack()
     green_button.place(x=130, y=50)
 
-    pink_button = tk.Button(colour_options, bg="pink", width=2, height=1, command= lambda: create_note("pink"))
+    pink_button = tk.Button(colour_options, bg="pink", width=2, height=1, command= lambda: [create_note("pink"), colour_options.destroy()])
     pink_button.pack()
     pink_button.place(x=170, y=50)
 
