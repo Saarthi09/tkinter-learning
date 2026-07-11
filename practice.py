@@ -83,8 +83,7 @@ create_btn = tk.Button(
     text="Create Note",
     font=("Times New Roman", 14),
     bg="khaki",
-    command=colour_picker
-)
+    command=colour_picker)
 create_btn.place(x=100, y=150)
 
 
